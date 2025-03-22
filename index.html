@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" >
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
     <link rel="stylesheet" href="./src/style_rules.css">
     <title>Document</title>
@@ -15,129 +15,139 @@
 
 <body>
     <nav class="nav_bar">
-        <div class="perfil">
-            <a href="#"><strong>Perfil</strong></a>
+        <div class="nav_split">
+            <div class="perfil">
+                <a href="#"><strong>Perfil</strong></a>
+            </div>
         </div>
-        <ul class="nav_links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Mi Perfil</a></li>
-            <li><a href="#">Encontrar Conexiones</a></li>
-            <li><a href="#" id="close_sesion">Cerrar Sesión</a></li>
-        </ul>
+        <div class="nav_split right">
+            <a class="nav_item" href="#">Inicio</a>
+            <a class="nav_item" href="#">Mi Perfil</a>
+            <a class="nav_item" href="#">Encontrar Conexiones</a>
+            <a class="nav_item" href="#" id="close_sesion">Cerrar Sesión</a>
+        </div>
     </nav>
     <div class="main">
-        <div class="panel profile">
-            <img class="profile_picture"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F9a%2F0f%2F55%2F9a0f550468634ca91bbc275b605cf322.jpg&f=1&nofb=1&ipt=ae01ddf694ee996da0cce10fd659085f388029dd228a4e22b4fb445ed90fc53e&ipo=images"
-                alt="ProfilePicture">
-            <div class="background"></div>
-            <div class="content">
-                <h1>Gon Freecs</h1>
-                <h3>Isla Ballena</h3>
-                <h3>Cazador | Explorador | Potenciador</h3>
-                <p>
-                    Gon Freecss (ゴン＝フリークス, Gon Furīkusu) is a Rookie Hunter and the son of Ging Freecss. Finding his
-                    father is Gon's motivation in becoming a Hunter.
-                </p>
-                <p>He has been the main protagonist for most of the series, having said role in the Hunter Exam,
-                    Heavens Arena, Greed Island, and Chimera Ant arcs. He was also the deuteragonist of the Yorknew City
-                    arc.
-                </p>
-                <button id="edit_profile">Edit Profile</button>
+        <div class="split left">
+            <div class="panel profile">
+                <img class="profile_picture"
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F9a%2F0f%2F55%2F9a0f550468634ca91bbc275b605cf322.jpg&f=1&nofb=1&ipt=ae01ddf694ee996da0cce10fd659085f388029dd228a4e22b4fb445ed90fc53e&ipo=images"
+                    alt="ProfilePicture">
+                <div class="background"></div>
+                <div class="content">
+                    <h1>Gon Freecs</h1>
+                    <h3>Isla Ballena</h3>
+                    <h3>Cazador | Explorador | Potenciador</h3>
+                    <p>
+                        Gon Freecss (ゴン＝フリークス, Gon Furīkusu) is a Rookie Hunter and the son of Ging Freecss. Finding his
+                        father is Gon's motivation in becoming a Hunter.
+                    </p>
+                    <p>He has been the main protagonist for most of the series, having said role in the Hunter Exam,
+                        Heavens Arena, Greed Island, and Chimera Ant arcs. He was also the deuteragonist of the Yorknew
+                        City
+                        arc.
+                    </p>
+                    <button id="edit_profile">Edit Profile</button>
+                </div>
+            </div>
+            <div class="panel education">
+                <h1>Education</h1>
+                <ul>
+                    <li>Coding Dojo - Bootcamp de Desarrollo Full Stack</li>
+                    <li>Dic 2019 - Mar 2020</li>
+                    <li>Triple cinturón negro en Python, MERN y C#</li>
+                </ul>
             </div>
         </div>
 
-        <div class="panel education">
-            <h1>Education</h1>
-            <ul>
-                <li>Coding Dojo - Bootcamp de Desarrollo Full Stack</li>
-                <li>Dic 2019 - Mar 2020</li>
-                <li>Triple cinturón negro en Python, MERN y C#</li>
-            </ul>
-        </div>
-
-        <div class="panel connections request">
-            <h1>Solicitudes de Conexión (2)</h1>
-            <ul>
-                <li>
-                    <img class="profile_picture connections request"
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fkillua-on-phone-hxh-pfp-y5i5mlizgusmkzaw.jpg&f=1&nofb=1&ipt=74207d9fea22654c6683d01c0f944b5d132b86ce08745de1662fff6d9d7d0bd0&ipo=images"
-                        alt="PfP">
-                    <h3>Killua Zoldyck</h3>
-                    <div class="holder">
-                        <button class="connection_button">
-                            <img
-                                src="https://cdn.iconscout.com/icon/free/png-512/free-checkmark-icon-download-in-svg-png-gif-file-formats--check-correct-verified-right-allow-user-interface-vol-3-pack-icons-2202825.png?f=webp&w=512"
-                                alt="confirm button">
-                        </button>
-                        <button class="connection_button">
-                            <img
-                                src="https://cdn.iconscout.com/icon/free/png-512/free-close-icon-download-in-svg-png-gif-file-formats--stop-cancel-quit-blockdeny-user-interface-vol-3-pack-icons-2202801.png?f=webp&w=512"
-                                alt="deny button">
-                        </button>
+        <div class="split">
+            <div class="panel connections request">
+                <h1>Solicitudes de Conexión (2)</h1>
+                <div class="split">
+                    <div class="connection request">
+                        <img class="profile_picture connections request"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fkillua-on-phone-hxh-pfp-y5i5mlizgusmkzaw.jpg&f=1&nofb=1&ipt=74207d9fea22654c6683d01c0f944b5d132b86ce08745de1662fff6d9d7d0bd0&ipo=images"
+                            alt="PfP">
+                        <h3>Killua Zoldyck</h3>
+                        <div class="button_holder">
+                            <button class="connection_button">
+                                <img src="https://cdn.iconscout.com/icon/free/png-512/free-checkmark-icon-download-in-svg-png-gif-file-formats--check-correct-verified-right-allow-user-interface-vol-3-pack-icons-2202825.png?f=webp&w=512"
+                                    alt="confirm button">
+                            </button>
+                            <button class="connection_button">
+                                <img src="https://cdn.iconscout.com/icon/free/png-512/free-close-icon-download-in-svg-png-gif-file-formats--stop-cancel-quit-blockdeny-user-interface-vol-3-pack-icons-2202801.png?f=webp&w=512"
+                                    alt="deny button">
+                            </button>
+                        </div>
                     </div>
-                </li>
-                <li>
-                    <img class="profile_picture connections request"
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fserious-and-solemn-kurapika-hxh-pfp-454uuie77rq43h7a.jpg&f=1&nofb=1&ipt=469d677ba64d89e12f1b93045923099a8725183e5cf5e9925407341435a58471&ipo=images"
-                        alt="PfP">
-                    <h3>Kurapika Kurta</h3>
-                    <div class="holder">
-                        <button class="connection_button">
-                            <img
-                                src="https://cdn.iconscout.com/icon/free/png-512/free-checkmark-icon-download-in-svg-png-gif-file-formats--check-correct-verified-right-allow-user-interface-vol-3-pack-icons-2202825.png?f=webp&w=512"
-                                alt="confirm button">
-                        </button>
-                        <button class="connection_button">
-                            <img
-                                src="https://cdn.iconscout.com/icon/free/png-512/free-close-icon-download-in-svg-png-gif-file-formats--stop-cancel-quit-blockdeny-user-interface-vol-3-pack-icons-2202801.png?f=webp&w=512"
-                                alt="deny button">
-                        </button>
+                    <div class="connection request">
+                        <img class="profile_picture connections request"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fserious-and-solemn-kurapika-hxh-pfp-454uuie77rq43h7a.jpg&f=1&nofb=1&ipt=469d677ba64d89e12f1b93045923099a8725183e5cf5e9925407341435a58471&ipo=images"
+                            alt="PfP">
+                        <h3>Kurapika Kurta</h3>
+                        <div class="button_holder">
+                            <button class="connection_button">
+                                <img src="https://cdn.iconscout.com/icon/free/png-512/free-checkmark-icon-download-in-svg-png-gif-file-formats--check-correct-verified-right-allow-user-interface-vol-3-pack-icons-2202825.png?f=webp&w=512"
+                                    alt="confirm button">
+                            </button>
+                            <button class="connection_button">
+                                <img src="https://cdn.iconscout.com/icon/free/png-512/free-close-icon-download-in-svg-png-gif-file-formats--stop-cancel-quit-blockdeny-user-interface-vol-3-pack-icons-2202801.png?f=webp&w=512"
+                                    alt="deny button">
+                            </button>
+                        </div>
                     </div>
-                </li>
-            </ul>
-        </div>
+                </div>
+            </div>
 
-        <div class="panel connections">
-            <h1>Tus conexiones (500+)</h1>
-            <ul>
-                <li>
-                    <img class="profile_picture connections"
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpreview.redd.it%2Fjust-an-appreciation-post-of-netero-one-of-the-characters-i-v0-yms94ax8un9a1.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D4be1dd0c3c3dfcb5f7e18f6b14d90656d7705dc6&f=1&nofb=1&ipt=24a22c8ba64ccdaf97339722d3454e996d25818a5d648830a0d7b703bc558168&ipo=images"
-                        alt="PfP">
-                    <h3>Isaac Netero</h3>
-                </li>
-                <li>
-                    <img class="profile_picture connections"
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpm1.narvii.com%2F6506%2Fcda9ceb4676c52f9dabb0fb2621d2d22822f91ec_hq.jpg&f=1&nofb=1&ipt=3f664127b1cf69e5c046079decac66514908d2e80c7bbcc966dc87084123d0ca&ipo=images"
-                        alt="PfP">
-                    <h3>Leorio Paradinight</h3>
-                </li>
-                <li>
-                    <img class="profile_picture connections"
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F80%2F98%2Ff8%2F8098f87f09ab5c1ba7fc53cfe57ba7e4.jpg&f=1&nofb=1&ipt=ce9292efdd0153c98ceb01ca127bcd146970dd323b4f28e26979b0cae435f539&ipo=images"
-                        alt="PfP">
-                    <h3>Wing</h3>
-                </li>
-                <li>
-                    <img class="profile_picture connections"
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette4.wikia.nocookie.net%2Fhunterxhunter%2Fimages%2Fb%2Fb7%2FMito_1999.png%2Frevision%2Flatest%3Fcb%3D20120619073122&f=1&nofb=1&ipt=4102f1e333e3979f05535e722ee4ec7a2d83fa54a76191e6ee872572757f64f4&ipo=images"
-                        alt="PfP">
-                    <h3>Mito san</h3>
-                </li>
-                <li>
-                    <img class="profile_picture connections"
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fhunterxhunter%2Fimages%2F1%2F17%2FZushi_HxH_2011.png%2Frevision%2Flatest%2Fscale-to-width-down%2F310%3Fcb%3D20180620132417%26path-prefix%3Dde&f=1&nofb=1&ipt=bfb847e18e1a244cfba2ad56566d41c72039fa6f8ea6ed42a847d48008d4e7fd&ipo=images"
-                        alt="PfP">
-                    <h3>Zushi</h3>
-                </li>
-                <li>
-                    <img class="profile_picture connections"
-                        src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fvignette2.wikia.nocookie.net%2Fhunterxhunter%2Fimages%2Fb%2Fbe%2FPalm_with_make_up.png%2Frevision%2Flatest%3Fcb%3D20130818144755&f=1&nofb=1&ipt=fa1f8afd738c15341a6339ef8d8dede70a7eafc92cf5f9a944f2f3ce7cb481d6&ipo=images"
-                        alt="PfP">
-                    <h3>Palm</h3>
-                </li>
-            </ul>
+            <div class="panel connections">
+                <h1>Tus conexiones (500+)</h1>
+                <div class="split">
+                    <div class="connection">
+                        <img class="profile_picture connections"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpreview.redd.it%2Fjust-an-appreciation-post-of-netero-one-of-the-characters-i-v0-yms94ax8un9a1.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D4be1dd0c3c3dfcb5f7e18f6b14d90656d7705dc6&f=1&nofb=1&ipt=24a22c8ba64ccdaf97339722d3454e996d25818a5d648830a0d7b703bc558168&ipo=images"
+                            alt="PfP">
+                        <h3>Isaac Netero</h3>
+                    </div>
+                    <div class="connection">
+    
+                        <img class="profile_picture connections"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpm1.narvii.com%2F6506%2Fcda9ceb4676c52f9dabb0fb2621d2d22822f91ec_hq.jpg&f=1&nofb=1&ipt=3f664127b1cf69e5c046079decac66514908d2e80c7bbcc966dc87084123d0ca&ipo=images"
+                            alt="PfP">
+                        <h3>Leorio Paradinight</h3>
+                    </div>
+                    <div class="connection">
+    
+                        <img class="profile_picture connections"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F80%2F98%2Ff8%2F8098f87f09ab5c1ba7fc53cfe57ba7e4.jpg&f=1&nofb=1&ipt=ce9292efdd0153c98ceb01ca127bcd146970dd323b4f28e26979b0cae435f539&ipo=images"
+                            alt="PfP">
+                        <h3>Wing</h3>
+    
+                    </div>
+                    <div class="connection">
+    
+                        <img class="profile_picture connections"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette4.wikia.nocookie.net%2Fhunterxhunter%2Fimages%2Fb%2Fb7%2FMito_1999.png%2Frevision%2Flatest%3Fcb%3D20120619073122&f=1&nofb=1&ipt=4102f1e333e3979f05535e722ee4ec7a2d83fa54a76191e6ee872572757f64f4&ipo=images"
+                            alt="PfP">
+                        <h3>Mito san</h3>
+    
+                    </div>
+                    <div class="connection">
+    
+                        <img class="profile_picture connections"
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvignette.wikia.nocookie.net%2Fhunterxhunter%2Fimages%2F1%2F17%2FZushi_HxH_2011.png%2Frevision%2Flatest%2Fscale-to-width-down%2F310%3Fcb%3D20180620132417%26path-prefix%3Dde&f=1&nofb=1&ipt=bfb847e18e1a244cfba2ad56566d41c72039fa6f8ea6ed42a847d48008d4e7fd&ipo=images"
+                            alt="PfP">
+                        <h3>Zushi</h3>
+    
+                    </div>
+                    <div class="connection">
+                        <img class="profile_picture connections"
+                            src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fvignette2.wikia.nocookie.net%2Fhunterxhunter%2Fimages%2Fb%2Fbe%2FPalm_with_make_up.png%2Frevision%2Flatest%3Fcb%3D20130818144755&f=1&nofb=1&ipt=fa1f8afd738c15341a6339ef8d8dede70a7eafc92cf5f9a944f2f3ce7cb481d6&ipo=images"
+                            alt="PfP">
+                        <h3>Palm</h3>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
