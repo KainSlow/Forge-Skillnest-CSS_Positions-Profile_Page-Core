@@ -102,6 +102,7 @@ img{
 
 .profile_picture.connections.request{
     border: deepskyblue solid 3px;
+    border-radius: 12px;
 }
 
 .nav_bar{
